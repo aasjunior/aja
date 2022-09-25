@@ -3,3 +3,4 @@
 @import url(./fonts.css);/*importação de familias de fonts*/
 @import url(./global.css);/*estilizações globais*/
 @import url(./custom.css);/*customização de estilo css por elementos*/
+@import url(./responsive.css);/*responsividade por media queries*/
