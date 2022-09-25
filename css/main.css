@@ -1,0 +1,5 @@
+@import url(./bootstrap.min.css);/*v5.2 - https://getbootstrap.com/docs/5.2/getting-started/introduction/*/
+@import url(./config.css);/*variaveis css (root)*/
+@import url(./fonts.css);/*importação de familias de fonts*/
+@import url(./global.css);/*estilizações globais*/
+@import url(./custom.css);/*customização de estilo css por elementos*/
