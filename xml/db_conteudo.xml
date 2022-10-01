@@ -2,6 +2,15 @@
 <conteudo>
     <equipe>
         <membro>
+            <nome>Amanda Silva</nome>
+            <frase>Graduação em DSM, especialização em UI/UX. Diretora de Design de experiência, co-fundadora da AJA.</frase>
+            <habilidade>Full-Stack</habilidade>
+            <foto>amanda-silva.jpg</foto>
+            <github>https://github.com/</github>
+            <linkedin>https://br.linkedin.com/</linkedin>
+            <instagram>https://www.instagram.com/</instagram>
+        </membro>
+        <membro>
             <nome>Aline Lauriano</nome>
             <frase>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, delectus.</frase>
             <habilidade>Full-Stack</habilidade>
@@ -15,15 +24,6 @@
             <frase>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, adipisci?</frase>
             <habilidade>Back-End</habilidade>
             <foto>adeldivo-junior.jpg</foto>
-            <github>https://github.com/</github>
-            <linkedin>https://br.linkedin.com/</linkedin>
-            <instagram>https://www.instagram.com/</instagram>
-        </membro>
-        <membro>
-            <nome>Amanda Silva</nome>
-            <frase>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, animi!</frase>
-            <habilidade>Full-Stack</habilidade>
-            <foto>amanda-silva.jpg</foto>
             <github>https://github.com/</github>
             <linkedin>https://br.linkedin.com/</linkedin>
             <instagram>https://www.instagram.com/</instagram>

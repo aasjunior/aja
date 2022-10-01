@@ -84,6 +84,25 @@ html{
     width: 90%;
 }
 
+/**/
+.slider{
+    width: 70%;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+}
+
+.seta{
+    position: relative;
+    top: -65px;
+    height: 150px;
+}
+
+.trab{
+    border: 1px solid #000;
+}
+
 /*equipe*/
 .eqp_h2{
     font-style: normal;
