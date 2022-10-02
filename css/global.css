@@ -1,3 +1,8 @@
+em{
+    color: var(--enfase);
+    font-weight: 600;
+}
+
 .title{
     font-family: 'Nunito';
     font-style: normal;
@@ -7,6 +12,8 @@
 }
 
 .subtitle{
+    margin-left: auto;
+    margin-right: auto;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
@@ -19,4 +26,14 @@
     background-repeat: no-repeat;
     background-size:contain;
     background-position: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+    align-items: right;
+    justify-content: end;
 }
