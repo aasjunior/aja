@@ -84,6 +84,86 @@ html{
     width: 90%;
 }
 
+/*SOBRE NÓS*/
+.about_section {
+    text-align: center;
+  }
+  
+.about_section .img-box img {
+    width: 350px;
+  }
+
+#sobre{
+    background-color:    ;
+}
+
+.sobre1{
+    background-color: #8ECAE6;
+    color: #000;
+    padding: 10%;
+  }
+
+.sobre1 a{
+    color:black!important;
+    background-color: white;
+  }
+
+.sobre1 a{
+    text-decoration: none!important;
+
+  }
+.sobre1 button {
+  background-color: white;
+  padding: 1%;
+  border-radius: 9%;
+}
+
+.sobre2 h2{
+    padding: 2%;
+    color: black;
+  }
+  .sobre2 i{
+      font-size: 40px;
+  }
+  .sobre2 div {
+      padding: 3%;
+      color: #222828;
+  }
+  
+  .sobre2 button,.four button{
+    background-color: transparent;
+    border-radius: 6px;
+    padding: 3%;
+  }
+  
+  .sobre2 button a{
+    color:  #222828;
+    font-variant: all-petite-caps;
+  }  
+
+  
+.sobre3{
+    background-image: url(https://img.olhardigital.com.br/wp-content/uploads/2021/07/mulheres-na-TI-1000x450.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 1000px;
+  
+  }
+  
+.sobre3 h1{
+    padding: 10%;
+    color: #023047;
+    background-color: transparent;
+  }
+  
+.sobre3 button a{
+     color: white;
+     font-variant: all-petite-caps;
+     font-size: 25px;
+   }
+/*SOBRE NÓS*/
+
 /*NOSSOS TRABALHOS*/
 .slider{
     width: 70%;
