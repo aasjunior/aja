@@ -3,4 +3,33 @@
     .eqp_p{
         text-align: center;
     }
+
+
+    /*COMO FUNCIONA*/
+    .bg-1{
+        width: 100vw;
+    }
+
+    .slider{
+        width: 100vw;
+    }
+
+    .trb_card{
+        width: 100vw;
+    }
+}
+
+/*`md` applies to small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px){
+    .trb_img{
+        width: 40%;
+        margin: 50px;
+    }
+
+    .trb_p{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
 }
