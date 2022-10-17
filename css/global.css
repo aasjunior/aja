@@ -22,9 +22,11 @@ em{
 }
 
 .bg-1{
+    width: 100vw;
+    padding: 12px;
     background: url("../imgs/6.png");
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size:100%;
     background-position: center;
 }
 

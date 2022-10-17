@@ -8,6 +8,10 @@ html{
 }
 
 /*navbar*/
+.logo{
+    height: 30px;
+}
+
 .div_nav{
     width: 100%;
     background-color: #fff;
@@ -87,10 +91,11 @@ html{
 /*NOSSOS TRABALHOS*/
 .slider{
     width: 80%;
+    padding: 0 60px;
     align-self: center;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 120px;
+    margin-bottom: 60px;
 }
 
 .seta{
