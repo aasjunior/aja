@@ -198,6 +198,10 @@ html{
     margin-bottom: 60px;
 }
 
+.tera_p{
+    width: 50%;
+}
+
 .tera_img{
     position: absolute;
     top: 60px;

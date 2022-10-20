@@ -4,6 +4,41 @@
         text-align: center;
     }
 
+    .tera{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tera_p{
+        width: 80%;
+    }
+    
+    .tera_img{
+        position: relative;
+        top: auto;
+        right: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .tera_phn{
+        /*height: 120px;*/
+        width: 25%;
+    }
+
+    .tera_dsk{
+        /*height: 160px;*/
+        width: 60%;
+        margin: 0;
+        transform: rotate(15.5deg);
+    }
+
+    .tera_wtc{
+        /*height: 100px;*/
+        width: 15%;
+    }
 
     /*COMO FUNCIONA*/
     .bg-1{
@@ -20,7 +55,8 @@
 }
 
 /*`md` applies to small devices (landscape phones, less than 768px)*/
-@media (max-width: 767.98px){
+
+@media (max-width: 767.98px){    
     .trb_img{
         width: 40%;
         margin: 50px;
