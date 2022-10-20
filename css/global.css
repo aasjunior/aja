@@ -30,6 +30,10 @@ em{
     background-position: center;
 }
 
+.bg-2{
+    background-color: var(--bg-tera);
+}
+
 .text-left{
     text-align: left;
 }
