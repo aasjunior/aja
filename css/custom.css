@@ -16,6 +16,7 @@ html{
     width: 100%;
     background-color: #fff;
     transition: background ease-out 0.2s;
+    z-index: 9999;
 }
 
 .div_nav-links{
@@ -229,10 +230,16 @@ html{
     margin-right: 220px;
 }
 
+.tera_mon{
+    position: absolute;
+    top: 280px;
+    left: -180px;
+    width: 100%;
+}
+
 /*COMO FUNCIONA*/
 .trb_card{
     position: relative;
-    z-index: 9999;
     top: -50px;
     width: 70%;
     margin-left: auto;
