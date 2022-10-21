@@ -247,13 +247,14 @@ html{
 /*COMO FUNCIONA*/
 .trb_card{
     position: relative;
-    top: -50px;
+    top: -150px;
     width: 70%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     border-radius: 2px;
-    box-shadow: 12px 12px 12px 12px rgba(239, 239, 239, 0.25);
+    background-color: #fff;
+    box-shadow: 12px 12px 12px 12px rgba(107, 107, 107, 0.25);
 }
 
 .trb_hlt{
