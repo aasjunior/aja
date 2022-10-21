@@ -30,6 +30,9 @@
 
     .tera_dsk{
         /*height: 160px;*/
+        position: relative;
+        top: 0;
+        right: auto;
         width: 60%;
         margin: 0;
         transform: rotate(15.5deg);
@@ -37,6 +40,9 @@
 
     .tera_wtc{
         /*height: 100px;*/
+        position: relative;
+        top: 0;
+        right: auto;
         width: 15%;
     }
 
