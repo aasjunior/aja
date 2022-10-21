@@ -237,6 +237,13 @@ html{
     width: 100%;
 }
 
+.tera_crd{
+    position: relative;
+    top: 380px;
+    left: 160px;
+}
+
+
 /*COMO FUNCIONA*/
 .trb_card{
     position: relative;

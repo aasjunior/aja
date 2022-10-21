@@ -34,6 +34,10 @@ em{
     background-color: var(--bg-tera);
 }
 
+.bg-3{
+    background-color: #fff;
+}
+
 .text-left{
     text-align: left;
 }
