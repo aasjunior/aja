@@ -249,6 +249,12 @@ html{
 .tera_crd em{
     font-style: normal;
 }
+
+.vertical {
+    align-self: center;
+    border-left: 6px solid var(--enfase);
+    height: 120px;
+}
 /*//TERA*/
 
 /*COMO FUNCIONA*/

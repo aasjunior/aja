@@ -36,6 +36,7 @@ em{
 
 .bg-3{
     background-color: #fff;
+    background-clip: padding-box;
 }
 
 .text-left{
