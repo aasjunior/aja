@@ -23,6 +23,7 @@ html{
     font-family: "Montserrat";
     font-weight: 600;
 }
+/*//navbar*/
 
 /*header*/
 .hdr_h1{
@@ -88,6 +89,8 @@ html{
 .hdr_img{
     width: 90%;
 }
+
+/*//header*/
 
 /*SOBRE NÓS*/
 .about_section {
@@ -239,10 +242,14 @@ html{
 
 .tera_crd{
     position: relative;
-    top: 380px;
-    left: 160px;
+    top: 400px;
+    left: 320px;
 }
 
+.tera_crd em{
+    font-style: normal;
+}
+/*//TERA*/
 
 /*COMO FUNCIONA*/
 .trb_card{
@@ -261,6 +268,7 @@ html{
     position: absolute;
     top: -25px;
 }
+/*//COMO FUNCIONA*/
 
 /*equipe*/
 .eqp_h2{
@@ -292,3 +300,4 @@ html{
     height: 24px;
     opacity: 0.6;
 }
+/*//equipe*/
