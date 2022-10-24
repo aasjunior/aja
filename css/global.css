@@ -39,6 +39,33 @@ em{
     background-clip: padding-box;
 }
 
+.bg-4{
+    background-image: url(../imgs/bg_fale-conosco.svg);
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: center;
+    height: 800px;
+}
+
+.bg-4 h1{
+    font-size: 56px;
+    font-weight: 600;
+    color: #8992D5;
+}
+
+.bg-4 h2{
+    font-size: 27px;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 12px;
+}
+
+.d-flx{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .text-left{
     text-align: left;
 }

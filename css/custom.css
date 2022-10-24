@@ -267,7 +267,7 @@ html{
     font-style: normal;
 }
 
-.vertical {
+.vertical{
     align-self: center;
     border-left: 6px solid var(--enfase);
     height: 120px;
