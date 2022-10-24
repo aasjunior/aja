@@ -42,9 +42,8 @@ em{
 .bg-4{
     background-image: url(../imgs/bg_fale-conosco.svg);
     background-repeat: no-repeat;
-    background-size:100%;
+    background-size:cover;
     background-position: center;
-    height: 800px;
 }
 
 .bg-4 h1{
