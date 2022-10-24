@@ -192,14 +192,20 @@ html{
 /*TERA*/
 .tera{
     position: relative;
-    top: -60px; 
+    top: -60px;
+    height: 1100px;
+}
+
+.t_c{
+    position: absolute;
+    top: 160px;
 }
 
 .tera_h1{
     font-size: 106px;
     font-weight: 600;
     color: #00A6FF;
-    margin-bottom: 60px;
+    margin-bottom: 0;
 }
 
 .tera_p{
@@ -208,7 +214,7 @@ html{
 
 .tera_img{
     position: absolute;
-    top: 60px;
+    top: -120px;
     right: 20px;
     width: 500px;
 }
@@ -235,14 +241,26 @@ html{
 
 .tera_mon{
     position: absolute;
-    top: 280px;
+    /*top: 280px;*/
+    top: 120px;
     left: -180px;
     width: 100%;
 }
 
+.tera_mon h2{
+    font-size: 1.8em;
+}
+
+.tera_mon p{
+    width: 60%;
+    font-size: 1.3em;
+}
+
 .tera_crd{
     position: relative;
-    top: 360px;
+    top: 400px;
+    width: 80%;
+    margin-top: 60px;
 }
 
 .tera_crd em{
