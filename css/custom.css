@@ -247,6 +247,10 @@ html{
     width: 100%;
 }
 
+.tera_mon img{
+    max-width: 80%;
+}
+
 .tera_mon h2{
     font-size: 1.8em;
 }
