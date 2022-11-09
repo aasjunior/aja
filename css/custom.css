@@ -161,7 +161,7 @@
             font-size: 1.3em;
         }
 
-    .pilares{
+    .pilares{   
         width: 80%;
         margin-bottom: 2rem;
         display: flex;
@@ -256,6 +256,9 @@
         text-align: left;
         padding: 2rem;
     }
+        .tera-sobre_desc{
+            font-size: 1.3em;
+        }
         .tera-sobre_title{
             font-size: 56px;
             margin-bottom: 1rem;
@@ -445,18 +448,17 @@
         width: 80%;
         margin: 0 auto;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
         .integrante{
             width: 30%;
             padding: 2rem;
             text-align: center;
             background-color: white;
-            border-radius: 1rem;
         }
         .integrante_img{
-            width: 200px;
-            border-radius: 50%;
+            width: 100%;
+            border-radius: 0.25rem;
             margin-bottom: 0.5rem;
         }
         .integrante_nome{            
@@ -483,11 +485,59 @@
             font-size: 1.5em;
             color: var(--blue-gray-pr);
         }
+
+        .integrantes-info_imgs{
+            display: flex;
+            justify-content: center;
+        }
+        .integrante-info_img{
+            width: 100%;
+            border-radius: 50%;
+        }
+        .integrante-info_btn{
+            width: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .integrantes-info_imgs .integrante-info_btn:not(:last-child){
+            margin-right: 1rem;
+        }
+        .integrante_select{ 
+            border: 4px solid var(--enfase);
+        }
+        .integrante-info{
+            width: 60%;
+            margin: 2rem auto;
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+            align-items: center;
+        }
+            .integrante-info_slide{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .integrante-info_desc{
+                width: 80%;
+            }
+            #btn-next, #btn-prev{
+                padding: 1rem;
+                border-radius: 50%;
+                background-color: var(--enfase);
+                color: white;
+                cursor: pointer;
+            }
 /*rodapé*/
 .footer{
     padding: 2rem 0 0;
-    color: var(--blue-gray-sr);
+    color: var(--font-color-light);
     font-size: 1em;
+    background-color: #212529;
 }
     .footer_center{
         max-width: 1400px;
@@ -526,7 +576,8 @@
     .footer_end{
         width: 100%;
         text-align: center;
-        background-color: #F8F9FA;
+        background-color: #212529;
+        border-top: 1px solid #efefef;
     }
         .footer_end-center{
             max-width: 1400px;

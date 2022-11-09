@@ -95,7 +95,6 @@ function exibirEquipe(){
         sectionEquipe.innerHTML += "<div class='integrante'>" +
                                         "<img src='imgs/equipe/"+ integrante.foto + "' alt='" + integrante.nome + "' class='integrante_img'>" +
                                         "<h2 class='integrante_nome'>" + integrante.nome + "</h2>" +
-                                        "<p class='integrante_frase'>" + integrante.frase + "</p>" +
                                         "<h5 class='integrante_hab'>" + integrante.habilidade + "</h5>" +
                                         "<ul class='integrante_icones'>" +
                                             "<li><a href='#" + integrante.github + "'><i class='fa-brands fa-github'></i></a></li>" +
