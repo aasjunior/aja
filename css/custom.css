@@ -1,330 +1,545 @@
-*{
-    max-width: 100%;
-}
-
-body,
-html{
-    font-family: "Nunito";
-}
-
-/*navbar*/
-.logo{
-    height: 30px;
-}
-
-.div_nav{
+.wrapper{
     width: 100%;
-    background-color: #fff;
-    transition: background ease-out 0.2s;
+}
+
+.center{
+    max-width: 1400px;
+    margin: auto;
+}
+.nav{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    padding: 1rem 2rem;
     z-index: 9999;
 }
-
-.div_nav-links{
-    font-family: "Montserrat";
-    font-weight: 600;
+.nav_content{
+    justify-content: space-between;
+    align-items: center;
 }
-/*//navbar*/
-
-/*header*/
-.hdr_h1{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 51px;
-    line-height: 70px;
-
-    /* Gradient/Primary */
-    background: linear-gradient(112.77deg, #C381DB 0%, #4E92F9 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.menu{
+    width: auto;
+    justify-content: space-around;
 }
+    .menu_link{
+        color: var(--primary-blue);
+        font-size: 1.1em;
+        margin-left: 12px;
+        transition: 0.4s;
+    }
+    .menu_link:hover{
+        color: var(--enfase);
+    }
 
-.hdr_h4{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 41px;
-
-    /* Blue gray/700 */
-    color: #485466;
+.menu_mobile{
+    display: none;
 }
+    .menu_items{
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 0 1rem;
+        text-align: left;
+        background-color: white;
+        display: none;
+        transition: 1s;
+    }
+    .menu_items-link{
+        display: block;
+        color: var(--primary-blue);
+        font-size: 0.875em; /*14px / 16px*/
+        border-bottom: 1px solid #f0f0f0;
+    }
+    .menu_items-link:hover{
+        color: var(--enfase);
+        background-color: #F8F9FA;
+    }
+    .menu_items.show{
+        display: block;
+    }
+    .menu_items.hide{
+        display: none;
+    }
 
-.hdr_p{
-    /* Body/.fs -0 */
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 140%;
-    /* or 22px */
-
-    /* Blue gray/600 */
-    color: #5A6980;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+.logo{
+    width: auto;
+    height: 32px;
 }
+    .logo_img{
+        height: 32px;
+        cursor: pointer;
+    }
 
-.hdr_btn{
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 7px 16px;
-    gap: 10px;
-    width: 113px;
-    height: 36px;
-    left: 0px;
-    top: 232px;
-
-    /* Gradient/Primary */
-    background: linear-gradient(112.77deg, #c381db 0%, #4E92F9 100%);
-    border-radius: 8px;
-
-    box-shadow: 6px 12px 12px 6px rgba(195, 129, 219, 0.25);
+.header{
+    padding: 120px 0;
+    justify-content: space-between;
+    border-bottom: 1px solid #efefef;
+    /*https://mycolor.space/gradient?ori=to+right+top&hex=%23023047&hex2=%23219EBC&sub=1*//*
+    background-image: linear-gradient(to right top, #023047, #094964, #116481, #18809f, #219ebc);*/
 }
+    .header_sobre{
+        width: 45%;
+        padding: 20px 60px 60px 0;
+    }
+        .header_title{
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 51px;
+            line-height: 70px;
+            margin-bottom: 20px;
+            color: var(--enfase);
+            /* Gradient/Primary
+            background: linear-gradient(112.77deg, var(--purple) 0%, var(--blue) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+        }
+        .header_subtitle{
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 41px;
+            margin-bottom: 20px;
 
-.hdr_img{
-    width: 90%;
-}
+            /* Blue gray/700 */
+            color: var(--blue-gray-pr);
+        }
+        .header_p{
+            /* Body/.fs -0 */
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            margin-bottom: 20px;
+            /* or 22px */
 
-/*//header*/
+            /* Blue gray/600 */
+            color: var(--blue-gray-sr);
 
-/*SOBRE NÓS*/
-.about_section {
-    text-align: center;
-  }
-  
-.about_section .img-box img {
-    width: 350px;
-  }
+            /* Inside auto layout */
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+        }
+    .header_fig{
+        width: 55%;
+        justify-content: center;
+    }
+        .header_img{
+            width: 100%;
+        }
+    .header_btn{
+        color: white;
 
-#sobre{
-    /*background-color:    ;*/
-}
+        background-color: var(--enfase);
+        border-radius: 8px;
+        /* Gradient/Primary 
+        background: linear-gradient(112.77deg, var(--purple) 0%, var(--blue) 100%);
+        border-radius: 8px;
+        box-shadow: 6px 12px 12px 6px rgba(195, 129, 219, 0.25);*/
+    }
 
-.sobre1{
-    background-color: #8ECAE6;
-    color: #000;
-    padding: 10%;
-  }
-
-.sobre1 a{
-    color:black!important;
-    background-color: white;
-  }
-
-.sobre1 a{
-    text-decoration: none!important;
-
-  }
-.sobre1 button {
-  background-color: white;
-  padding: 1%;
-  border-radius: 9%;
-}
-
-.sobre2 h2{
-    padding: 2%;
-    color: black;
-  }
-  .sobre2 i{
-      font-size: 40px;
-  }
-  .sobre2 div {
-      padding: 3%;
-      color: #222828;
-  }
-  
-  .sobre2 button,.four button{
-    background-color: transparent;
-    border-radius: 6px;
-    padding: 3%;
-  }
-  
-  .sobre2 button a{
-    color:  #222828;
-    font-variant: all-petite-caps;
-  }  
-
-  
-.sobre3{
-    background-image: url(https://img.olhardigital.com.br/wp-content/uploads/2021/07/mulheres-na-TI-1000x450.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 1000px;
-  
-  }
-  
-.sobre3 h1{
-    padding: 10%;
-    color: #023047;
-    background-color: transparent;
-  }
-  
-.sobre3 button a{
-     color: white;
-     font-variant: all-petite-caps;
-     font-size: 25px;
-   }
-/*SOBRE NÓS*/
-
-
-/*NOSSOS TRABALHOS*/
-.slider{
-    width: 80%;
-    padding: 0 60px;
-    align-self: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 60px;
-}
-
-.seta{
-    position: relative;
-    top: -65px;
-    height: 150px;
-}
-
-/*TERA*/
-.tera{
-    position: relative;
-    top: -60px;
-    height: 1100px;
-}
-
-.t_c{
-    position: absolute;
-    top: 160px;
-}
-
-.tera_h1{
-    font-size: 106px;
-    font-weight: 600;
-    color: #00A6FF;
-    margin-bottom: 0;
-}
-
-.tera_p{
-    width: 50%;
-}
-
-.tera_img{
-    position: absolute;
-    top: -120px;
-    right: 20px;
-    width: 500px;
-}
-
-.tera_phn{
-    width: 260px;
-}
-
-.tera_dsk{
-    position: absolute;
-    top: 280px;
-    right: -20px;
-    width: 300px;
-    margin-left: 200px;
-}
-
-.tera_wtc{
-    position: absolute;
-    top: 480px;
-    right: 40px;
-    width: 120px;
-    margin-right: 220px;
-}
-
-.tera_mon{
-    position: absolute;
-    /*top: 280px;*/
-    top: 120px;
-    left: -180px;
+.sobre{
     width: 100%;
-}
-
-.tera_mon img{
-    max-width: 80%;
-}
-
-.tera_mon h2{
-    font-size: 1.8em;
-}
-
-.tera_mon p{
-    width: 60%;
-    font-size: 1.3em;
-}
-
-.tera_crd{
-    position: relative;
-    top: 400px;
-    width: 80%;
-    margin-top: 60px;
-}
-
-.tera_crd em{
-    font-style: normal;
-}
-
-.vertical{
-    align-self: center;
-    border-left: 6px solid var(--enfase);
-    height: 120px;
-}
-/*//TERA*/
-
-/*COMO FUNCIONA*/
-.trb_card{
-    position: relative;
-    top: -150px;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 2rem;
     text-align: center;
-    border-radius: 2px;
-    background-color: #fff;
-    box-shadow: 12px 12px 12px 12px rgba(107, 107, 107, 0.25);
 }
+    .sobre-nos{
+        width: 100%;
+        padding: 0 2rem 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+        .sobre-nos_desc{
+            width: 80%;
+            margin: auto;
+            font-size: 1.3em;
+        }
 
-.trb_hlt{
-    position: absolute;
-    top: -25px;
+    .pilares{
+        width: 80%;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 2rem auto 4rem;
+    }
+        .pilares-item{
+            width: 25%;
+            padding: 2rem;
+            background: #FFFFFF;
+            box-shadow: 0px 10px 22px rgb(0 0 0 / 5%);
+            border-radius: 0.25rem;
+        }
+            .pilares-item_img{
+                height: 50%;
+                margin-bottom: 0.5rem;
+            }
+            .pilares-item:not(:last-child){
+                margin-right: 2rem;
+            }
+            .pilares-item_title{
+                margin-bottom: 0.5rem;
+            }
+    .ods{
+        display: flex;
+        padding: 2rem;
+        color: white;
+        background-color: /* #f9f9f9*/;
+    }
+        .ods-logo{
+            width: 40%;
+            padding: 4em 2em;
+            margin: 2em 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url("../imgs/ods-people.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 0.25rem;
+            z-index: 9998;
+        }
+            .ods-logo_img{
+                width: 60%;
+            }
+            .ods-logo_title{
+                font-size: 56px;
+            }
+        .ods-sobre{
+            margin-left: -60px;
+            width: 60%;
+            padding: 4em 6em;
+            background-color: var(--primary-blue);
+            border-radius: 0.25rem;
+            font-size: 1.2em;
+            text-align: justify;
+        }
+            .ods-sobre_p{
+                color: white;
+            }
+            .ods-pilares{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+                .ods-pilares_item{
+                    width: 20%;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    font-size: 1em;
+                    color: #72E8D2;
+                }
+                .ods-pilares_img{
+                    height: auto;
+                }
+.trabalhos{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #FAFBFC;
 }
-/*//COMO FUNCIONA*/
+    .tera{
+        display: flex;
+        padding: 2rem;
+    }
+    .tera-sobre{
+        width: 50%;
+        text-align: left;
+        padding: 2rem;
+    }
+        .tera-sobre_title{
+            font-size: 56px;
+            margin-bottom: 1rem;
+        }
+        .tera-plataformas{
+            width: 100%;
+            margin-top: 2em;
+            display: flex;
+            flex-direction: column;
+        }
+            .tera-plataformas_item{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1rem;
+                cursor: pointer;
+                margin-bottom: 1rem;
+            }
+            .tera-plataformas_item:hover{
+                background: #FFFFFF;
+                box-shadow: 0px 10px 22px rgb(0 0 0 / 5%);
+                border-radius: 0.25rem;
+            }
+                .tera-plataformas_img{
+                    width: 15%;
+                }
+                .tera-plataformas_p{
+                    margin: 1rem;
+                }
+                .active{
+                    background: #FFFFFF;
+                    box-shadow: 0px 10px 22px rgb(0 0 0 / 5%);
+                    border-radius: 0.25rem;
+                    transition: .2s;
+                }
+    .tera-slide{
+        width: 50%;
+        padding: 2rem;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tera-slide_imgs{
+        margin: auto;
+    }
+        #desktop{
+            transform: rotate(15deg);
+        }
+        #smartwatch{
+            width: 80%;
+            transform: rotate(35deg);
+        }
+        #mobile{
+            width: 100%;
+        }
+        .tera-slide_img{
+            display: none;
+            margin: auto;
+        }
+        .img-atual{
+            display: flex;
+        }
+
+
+
+/*fale conosco*/
+.fale-conosco{
+    width: 100%;
+    padding: 60px 2em;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../imgs/bg_fale-conosco.svg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+    .fale-conosco_center{    
+        max-width: 1400px;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+    .fale-conosco_fig{
+        width: 50%;
+        padding: 2em;
+        border-radius: 8px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+        .fale-conosco_img{
+            width: 80%;
+        }
+
+    .fale-conosco_card{
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+        .fale-conosco_title{
+            font-size: 56px;
+            font-weight: 600;
+            color: #8992D5;
+        }
+        .fale-conosco_subtitle{
+            width: 80%;
+            margin: auto;
+            margin-bottom: 12px;
+            font-size: 1.5em;
+            font-weight: normal;
+        }
+        .fale-conosco_form{
+            width: 90%;
+            padding: 1em;
+            background-color: white;
+            border-radius: 8px;
+        }
+            .fale-conosco_form-frm{   
+                padding: auto 2em;
+                border: 1px solid #efefef;
+            }
+            .fale-conosco_legenda{
+                font-size: 1.2em;
+                padding-top: 1em;
+                margin: auto;
+            }
+            .fale-conosco_form-group{
+                margin: 12px auto;
+                display: flex;
+                flex-direction: column;
+            }
+            .form-label{
+                font-size: 1em;
+                font-weight: 400;
+                color: #212529;
+                margin: 0 0 8px;
+            }
+            .form-control{
+                display: block;
+                width: 100%;
+                padding: 0.375rem 0.75rem;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #212529;
+                background-color: #fff;
+                background-clip: padding-box;
+                border: 1px solid #ced4da;
+                border-radius: 0.375rem;
+                outline: none;
+            }
+            .form-control:focus{
+                border: 2px solid #8992D5;
+                transition: 0.2s;
+            }
+            .fale-conosco_btn{
+                color: white;
+                font-size: 1em;
+                background-color: var(--enfase);
+            }
 
 /*equipe*/
-.eqp_h2{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 27px;
+.equipe{
+    width: 100%;
+    padding: 60px 2em 40px;
 }
-
-.eqp_h5{
-    text-align: left;
-    margin-left: 15px;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 22px;
+    .equipe_title{
+        font-size: 56px;
+    }
+    .equipe_subtitle{
+        font-size: 1.3em;
+        color: var(--font-color-light);
+        font-weight: normal;
+        margin: 2em auto;
+        width: 80%;
+    }
+    .equipe_sobre{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .integrantes{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+        .integrante{
+            width: 30%;
+            padding: 2rem;
+            text-align: center;
+            background-color: white;
+            border-radius: 1rem;
+        }
+        .integrante_img{
+            width: 200px;
+            border-radius: 50%;
+            margin-bottom: 0.5rem;
+        }
+        .integrante_nome{            
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 0.5rem;
+        }
+        .integrante_frase{
+            font-weight: 400;
+            font-size: 16px;
+            margin-bottom: 0.5rem;
+        }
+        .integrante_hab{
+            font-size: 1em;
+            color: var(--blue-gray-sr);
+            margin-bottom: 1rem;
+        }
+        .integrante_icones{
+            width: 50%;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            font-size: 1.5em;
+            color: var(--blue-gray-pr);
+        }
+/*rodapé*/
+.footer{
+    padding: 2rem 0 0;
+    color: var(--blue-gray-sr);
+    font-size: 1em;
 }
-
-.eqp_p{
-    text-align: justify;
-    margin-left: 15px;
-    margin-right: 15px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-}
-
-.eqp_icone{
-    width: 24px;
-    height: 24px;
-    opacity: 0.6;
-}
-/*//equipe*/
+    .footer_center{
+        max-width: 1400px;
+        margin: auto;
+        padding: 2rem;
+        justify-content: space-between;
+    }
+    .footer_title{
+        text-transform: uppercase;
+        margin-bottom: 1.5em;
+    }
+    .footer_i{
+        margin-right: 0.5rem;
+    }
+    .footer_sobre{
+        width: 30%;
+        margin-left: 1em;
+        margin-bottom: 2em;
+    }
+    .footer_links{
+        margin-bottom: 2em;
+    }
+        .footer_links-item{
+            margin-bottom: 0.25rem;
+        }
+        .footer_links-item:hover{
+            color: var(--enfase);
+        }
+    .footer_contatos{
+        margin-left: 1em;
+        margin-bottom: 2em;
+    }
+        .footer_contatos-item{
+            margin-bottom: 1rem;
+        }
+    .footer_end{
+        width: 100%;
+        text-align: center;
+        background-color: #F8F9FA;
+    }
+        .footer_end-center{
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.4rem 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer_end-redes{
+            display: flex;
+        }
+        .footer_end-redes .fa-brands{
+            font-size: 1.5em;
+            margin-left: 1rem;
+        }

@@ -5,6 +5,11 @@
     --terciary-blue: #8ECAE6;
     --primary-orange: #FB8500;
     --secundary-orange: #FFB703;
-    --enfase: #00A6FF;
+    --purple: #c381db;
+    --blue: #4E92F9;
+    --blue-gray-pr: #485466;/* Blue gray/700 */
+    --blue-gray-sr: #5A6980;/* Blue gray/600 */
+    --enfase: #8992D5/*#00A6FF*/;
     --bg-tera: #E9F5FF;
+    --font-color-light: #7C8595;
 }

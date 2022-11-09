@@ -1,16 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito';
+    /*font-family: 'Poppins', sans-serif;*/
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul, li{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
 em{
     color: var(--enfase);
     font-weight: 600;
 }
-
+p{
+    font-size: 1.1em;
+    color: var(--font-color-light);
+}
+fieldset{
+    border: none;
+    padding: 1.2em;
+}
+.btn{
+    display: inline-block;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+}
 .title{
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 56px;
+    margin: 2rem auto 1rem;
 }
-
 .subtitle{
     margin-left: auto;
     margin-right: auto;
@@ -20,55 +49,19 @@ em{
     font-size: 16px;
     line-height: 140%;
 }
-
-.bg-1{
-    width: 100vw;
-    padding: 12px;
-    background: url("../imgs/6.png");
-    background-repeat: no-repeat;
-    background-size:100%;
-    background-position: center;
-}
-
-.bg-2{
-    background-color: var(--bg-tera);
-}
-
-.bg-3{
-    background-color: #fff;
-    background-clip: padding-box;
-}
-
-.bg-4{
-    background-image: url(../imgs/bg_fale-conosco.svg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
-}
-
-.bg-4 h1{
-    font-size: 56px;
-    font-weight: 600;
-    color: #8992D5;
-}
-
-.bg-4 h2{
-    font-size: 27px;
-    width: 75%;
-    margin: auto;
-    margin-bottom: 12px;
-}
-
-.d-flx{
+/*display*/
+.d-flex{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+}
+.d-none{
+    display: none;
 }
 
+/*text*/
 .text-left{
     text-align: left;
 }
-
 .text-right{
     text-align: right;
     align-items: right;

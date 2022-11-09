@@ -1,166 +1,155 @@
-/*`lg` applies to medium devices (tablets, less than 992px)*/
-@media (max-width: 991.98px){
-    .eqp_p{
-        text-align: center;
+@media screen and (max-width: 960px) {
+    .header{
+        padding: 2rem 1rem 0;
+    }
+
+    .header_sobre{
+        width: 100%;
+        padding: 20px 0.5em;
+        order: 2;
+    }
+
+    .header_fig{
+        width: 100%;
+        padding: 0 0.5em;
+        order: 1;
     }
 
     .tera{
-        justify-content: center;
-        height: 1400px;
-        padding: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
-    .t_c{
-        top: 160px;
+    .tera_title{
+        font-size: 5em;
     }
-
     .tera_p{
-        width: 80%;
+        width: 100%;
+        font-size: 1.4em;
+        margin: 20px auto 60px;
+        order: 3;
     }
-    
+
     .tera_img{
         position: relative;
         top: auto;
         right: auto;
+        width: 80%;
+        padding: 0 2em;
+        margin: 0 auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        order: 2;
     }
 
-    .tera_phn{
-        /*height: 120px;*/
-        width: 25%;
-    }
+        .tera_phn{
+            /*height: 120px;*/
+            width: 25%;
+        }
 
-    .tera_dsk{
-        /*height: 160px;*/
-        position: relative;
-        top: 0;
-        right: auto;
-        width: 60%;
-        margin: 0;
-        transform: rotate(15.5deg);
-    }
+        .tera_dsk{
+            /*height: 160px;*/
+            position: relative;
+            top: 0;
+            right: auto;
+            width: 60%;
+            margin: 0;
+            transform: rotate(15.5deg);
+        }
 
-    .tera_wtc{
-        /*height: 100px;*/
-        position: relative;
-        top: 0;
-        right: auto;
-        width: 15%;
-    }
+        .tera_wtc{
+            /*height: 100px;*/
+            position: relative;
+            top: 0;
+            left: auto;
+            right: auto;
+            width: 15%;
+        }
 
     .tera_mon{
-        position: relative;
-        top: 0;
-        left: auto;
+        justify-content: center;
+    }
+
+        .tera_mon-img{
+            width: 30%;
+        }
+
+        .tera_mon-sobre{
+            width: 60%;
+            margin-left: 20px;
+        }
+
+    .tera_mon-crd{
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .trb_crd{
+        width: 100%;
+    }
+
+    .fale-conosco_fig{
+        display: none;
+    }
+
+    .fale-conosco_card{
+        width: 80%;
+        padding: 1rem;
+        background-color: white;
+        border-radius: 1em;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .menu{
+        display: none;
+    }
+
+    .menu_mobile{
+        display: block;
+    }
+        #menu_mobile-icon{
+            font-size: 2em; /*32/16*/
+            color: var(--blue-gray-sr);
+            cursor: pointer;
+        }
+
+    .header_title{
+        font-size: 32px;
+        margin: 0;
+    }
+
+    .header_subtitle{
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .tera_mon-crd article{
         width: 100%;
         margin-bottom: 20px;
-    }
-
-    .tera_mon h2{
-        font-size: 1.2em;
-    }
-
-    .tera_mon p{
-        top: 0;
-        width: 80%;
-        font-size: 1em;
-    }
-
-    .tera_mon img{
-        width: 100%;
-    }
-
-    .tera_crd{
-        top: 0;
-        width: 100vw;
     }
 
     .vertical{
         display: none;
     }
 
-    .tera_crd .bg-3{
-        margin-bottom: 20px;
+    .crd_item-left, .crd_item-right{
+        margin-bottom: 1em;
     }
-
-    /*COMO FUNCIONA*/
-    .bg-1{
-        width: 100vw;
-    }
-
-    .slider{
-        width: 100vw;
-    }
-
-    .trb_card{
-        width: 100vw;
-    }
-
-    /*Fale Conosco*/
-    .fc{
-        padding: 0;
-        height: 800px;
-    }
-    .fc_img{
-        display: none;
-    }
-
-    .fc_crd{
-        position: absolute;
-        left: 0;
-        width: 100vw;
-        padding: 0;
-    }
-
-    .fc_frm{
-        width: 100%;
-        height: 80vh;
-        background-color: #fff;
-        padding-top: 24px;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .fc_frm .bg-3{
-        position: absolute;
-        top: 180px;
-        width: 100%;
-        padding: 0;
-    }
-
-    .fc_frm .bg-3 legend{
-        display: none;
-    }
-
-    .bg-4 h1{
-        font-size: 2.5em;
-    }
-    
-    .bg-4 h2{
-        font-size: 1.4em;
-        width: 100%;
-    }
-}
-
-/*`md` applies to small devices (landscape phones, less than 768px)*/
-
-@media (max-width: 767.98px){  
-    .tera_mon p{
-        width: 100%;
-    }
-
     .trb_img{
-        width: 40%;
-        margin: 50px;
+        width: 30%;
+    }
+    .trb_p{
+        width: 60%;
+        margin: 20px;
+        font-size: 1em;
     }
 
-    .trb_p{
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
+    .fale-conosco_card{width: 100%;}
+    .footer_center{
+        justify-content: space-around;
     }
+    .footer_sobre{width: 100%;}
 }
