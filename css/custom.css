@@ -1,5 +1,5 @@
 .wrapper{
-    width: 100%;
+    max-width: 100%;
 }
 
 .center{
@@ -235,7 +235,10 @@
                     display: flex;
                     flex-direction: column;
                     text-align: center;
+                    justify-content: center;
+                    align-items: center;
                     font-size: 1em;
+                    margin: 0.5rem;
                     color: #72E8D2;
                 }
                 .ods-pilares_img{
