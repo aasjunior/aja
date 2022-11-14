@@ -311,7 +311,6 @@
         margin: auto;
     }
         #desktop{
-            transform: rotate(15deg);
         }
         #smartwatch{
             width: 80%;

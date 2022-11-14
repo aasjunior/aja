@@ -15,7 +15,45 @@
         order: 1;
     }
 
+    .sobre-nos_desc{
+        width: 100%;
+        margin: 1rem;
+    }
+    .sobre-nos .title{
+        margin-bottom: 2rem;
+    }
+
+    .pilares{
+        width: 100%;
+        flex-wrap: wrap;
+        
+        padding: 2rem;
+    }
+    .pilares-item{
+        width: 100%;
+        margin-bottom: 2rem;
+        margin: auto auto 2rem;
+    }
+    .ods-logo{
+        display: none;
+    }
+    .ods-sobre{
+        width: 100%;
+        padding: 4rem 2rem 2rem;
+        margin: auto;
+        
+        background-image: url("../imgs/ods-people.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .tera-sobre{
+        width: 100%;
+    }
+    .tera-slide{
+        width: 100%;
+    }
     .tera{
+        flex-wrap: wrap;
         padding-left: 1rem;
         padding-right: 1rem;
     }
@@ -90,6 +128,17 @@
         width: 100%;
     }
 
+    .integrante{
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+    .integrante_img{
+        width: 60%;
+    }
+    .integrantes{
+        flex-wrap: wrap;
+    }
+
     .fale-conosco_fig{
         display: none;
     }
@@ -119,6 +168,10 @@
     .header_title{
         font-size: 32px;
         margin: 0;
+    }
+
+    .pilares-item{
+        width: 100%;
     }
 
     .header_subtitle{
