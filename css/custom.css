@@ -28,7 +28,7 @@
         transition: 0.4s;
     }
     .menu_link:hover{
-        color: var(--enfase);
+        color: var(--terciary-blue);
     }
 
 .menu_mobile{
@@ -52,7 +52,7 @@
         border-bottom: 1px solid #f0f0f0;
     }
     .menu_items-link:hover{
-        color: var(--enfase);
+        color: var(--terciary-blue);
         background-color: #F8F9FA;
     }
     .menu_items.show{
@@ -189,7 +189,6 @@
         display: flex;
         padding: 2rem;
         color: white;
-        background-color: /* #f9f9f9*/;
     }
         .ods-logo{
             width: 40%;
@@ -222,9 +221,11 @@
         }
             .ods-sobre_p{
                 color: white;
+                margin: 0 0 2rem;
             }
             .ods-pilares{
                 width: 100%;
+                margin-top: 2rem;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
@@ -238,7 +239,9 @@
                     color: #72E8D2;
                 }
                 .ods-pilares_img{
-                    height: auto;
+                    height: 50%;
+                    width: max-content;
+                    margin: 1rem auto 0.5rem;
                 }
 .trabalhos{
     text-align: center;
@@ -249,7 +252,8 @@
 }
     .tera{
         display: flex;
-        padding: 2rem;
+        padding: 2rem 4rem;
+        margin: auto;
     }
     .tera-sobre{
         width: 50%;
@@ -457,8 +461,8 @@
             background-color: white;
         }
         .integrante_img{
-            width: 100%;
-            border-radius: 0.25rem;
+            width: 80%;
+            border-radius: 50%;
             margin-bottom: 0.5rem;
         }
         .integrante_nome{            
@@ -486,52 +490,6 @@
             color: var(--blue-gray-pr);
         }
 
-        .integrantes-info_imgs{
-            display: flex;
-            justify-content: center;
-        }
-        .integrante-info_img{
-            width: 100%;
-            border-radius: 50%;
-        }
-        .integrante-info_btn{
-            width: 80px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-            cursor: pointer;
-        }
-        .integrantes-info_imgs .integrante-info_btn:not(:last-child){
-            margin-right: 1rem;
-        }
-        .integrante_select{ 
-            border: 4px solid var(--enfase);
-        }
-        .integrante-info{
-            width: 60%;
-            margin: 2rem auto;
-            display: flex;
-            text-align: center;
-            justify-content: space-between;
-            align-items: center;
-        }
-            .integrante-info_slide{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-            .integrante-info_desc{
-                width: 80%;
-            }
-            #btn-next, #btn-prev{
-                padding: 1rem;
-                border-radius: 50%;
-                background-color: var(--enfase);
-                color: white;
-                cursor: pointer;
-            }
 /*rodapé*/
 .footer{
     padding: 2rem 0 0;
@@ -564,7 +522,7 @@
             margin-bottom: 0.25rem;
         }
         .footer_links-item:hover{
-            color: var(--enfase);
+            color: var(--terciary-blue);
         }
     .footer_contatos{
         margin-left: 1em;

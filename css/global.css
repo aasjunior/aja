@@ -16,7 +16,7 @@ img{
     max-width: 100%;
 }
 em{
-    color: var(--enfase);
+    color: var(--terciary-blue);
     font-weight: 600;
 }
 p{
@@ -38,7 +38,7 @@ fieldset{
     font-style: normal;
     font-weight: 700;
     font-size: 56px;
-    margin: 2rem auto 1rem;
+    margin: 2rem auto 0;
 }
 .subtitle{
     margin-left: auto;
