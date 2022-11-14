@@ -34,6 +34,7 @@
         margin-bottom: 2rem;
         margin: auto auto 2rem;
     }
+    
     .ods-logo{
         display: none;
     }
@@ -41,6 +42,7 @@
         width: 100%;
         padding: 4rem 2rem 2rem;
         margin: auto;
+        margin-left: 0;
         
         background-image: url("../imgs/ods-people.png");
         background-repeat: no-repeat;
