@@ -247,6 +247,7 @@
                     margin: 1rem auto 0.5rem;
                 }
 .trabalhos{
+    padding-top: 1rem;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -255,7 +256,7 @@
 }
     .tera{
         display: flex;
-        padding: 2rem 4rem;
+        padding: 0 4rem;
         margin: auto;
     }
     .tera-sobre{
