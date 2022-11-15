@@ -28,7 +28,7 @@
         transition: 0.4s;
     }
     .menu_link:hover{
-        color: var(--terciary-blue);
+        color: var(--enfase);
     }
 
 .menu_mobile{
